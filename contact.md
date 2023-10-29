@@ -7,7 +7,5 @@ title: contact | mittens
 ~ $ cat contact.txt
 ```
 
-Email:  `mittens28.req3f@aleeas.com`
-
-
-GitHub: [Mr-Mittens](https://github.com/Mr-Mittens)
+[Email](README.md)
+[hh](posts.md)
