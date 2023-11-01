@@ -1,11 +1,9 @@
 ---
 layout: page
-title: contact | mittens
+title: contact | M30303
 ---
 
 ```term
-~ $ cat contact.txt
+~ $ NOTHING HERE FOR NOW !
 ```
 
-[Email](README.md)
-[hh](posts.md)

@@ -1,14 +1,8 @@
 ---
 layout: page
-title: home | mittens
+title: home | M30303
 ---
 
 ```term
-~ $ ./hello friend ! Welcome to my base. 
-```
-```term
-~ $ cat ntng.txt 
-```
-```term
-~ $ explore and see what you can find helpful here ..
+~ $ ./hey there
 ```
