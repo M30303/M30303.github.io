@@ -1,6 +1,5 @@
 ---
-layout: page
-title: posts | mittens
+layout: default
 ---
 
 <section>
@@ -14,7 +13,7 @@ title: posts | mittens
         <h3>{{ firstpostyear }}</h3>
     {% endif %}
 
-    {%for post in site.posts %}
+    {% for post in site.posts %}
       {% unless post.next %}
         <ul>
       {% else %}
@@ -26,7 +25,8 @@ title: posts | mittens
           <ul>
         {% endif %}
       {% endunless %}
-        <li><time>{{ post.date | date:"%d %b" }} - </time>
+        <li>
+          <time>{{ post.date | date:"%d %b" }} - </time>
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
             {{ post.title }}
           </a>
@@ -34,23 +34,5 @@ title: posts | mittens
     {% endfor %}
     </ul>
 
-  {% endif %}
-
-  <!-- Add a new loop for lifestyle posts -->
- {% assign lifestyle_posts = site.lifestyle | where: "category", "lifestyle" %}
-{% if lifestyle_posts.size > 0 %}
-  <h3>Lifestyle</h3>
-  <ul>
-    {% for post in lifestyle_posts %}
-      <li>
-        <time>{{ post.date | date: "%d %b" }} - </time>
-        <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-          {{ post.title }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}
-    </ul>
   {% endif %}
 </section>
