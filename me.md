@@ -1,11 +1,8 @@
 ---
 layout: page
-title: me | M30303
+title: Me | Krabx64
 ---
 
+## chud kreb
 
-M30303 just a designer ! testing out his skills..
-![alt text](assets/img/thunder.gif)
-
-
-
+distinctive sideways movement. Resilient and agile, lol 

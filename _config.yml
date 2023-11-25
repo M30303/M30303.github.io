@@ -13,8 +13,6 @@ permalink: /:title
 paginate: 5
 paginate_path: /blog/page:num/
 
-
-  -
 collections:
   posts:
     output: true
@@ -34,21 +32,12 @@ defaults:
     values:
       layout: "lifestyle"  # Specify the layout for category
 
-# ... (other configurations)
-
-
-future: true
-plugins:
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-sitemap
-
 # Custom variables
-owner : "krab"
-year : "2023"
+owner: "krab"
+year: "2023"
 
-# thanks tocttou for this theme
+# Thanks tocttou for this theme
 remote_theme: tocttou/hacker-blog
 
-# jekyll serve options
-port: 8880 #local server port
+# Jekyll serve options
+port: 8880  # local server port
