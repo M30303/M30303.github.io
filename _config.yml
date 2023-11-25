@@ -1,9 +1,9 @@
-title: M30303
-description: "M30303's webpage"
+title: krabx64
+description: "krabx64's webpage"
 author:
-  name: "M30303"
+  name: "krabx64"
   email: ""
-  url: "https://github.com/M30303"
+  url: "https://github.com/krabx64"
 
 baseurl: ""
 
@@ -13,13 +13,29 @@ permalink: /:title
 paginate: 5
 paginate_path: /blog/page:num/
 
-defaults:
+
   -
-    scope:
+collections:
+  posts:
+    output: true
+  lifestyle:  # category added
+    output: true
+
+defaults:
+  - scope:
       path: ""
       type: "posts"
     values:
-      layout: "post"
+      layout: "post"  # Default layout for posts
+
+  - scope:
+      path: ""
+      type: "lifestyle"  # Default layout for category
+    values:
+      layout: "lifestyle"  # Specify the layout for category
+
+# ... (other configurations)
+
 
 future: true
 plugins:
@@ -28,7 +44,7 @@ plugins:
   - jekyll-sitemap
 
 # Custom variables
-owner : "mittens"
+owner : "krab"
 year : "2023"
 
 # thanks tocttou for this theme
