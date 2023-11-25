@@ -35,10 +35,6 @@ title: posts | mittens
     </ul>
 
   {% endif %}
-</section>
-
-<section>
-  <!-- Existing code -->
 
   <!-- Add a new loop for lifestyle posts -->
   {% assign lifestyle_posts = site.lifestyle | where: "category", "lifestyle" %}
@@ -55,4 +51,3 @@ title: posts | mittens
     </ul>
   {% endif %}
 </section>
-
